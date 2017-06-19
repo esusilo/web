@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <script src="script/main.js"></script>
   </head>
   <body>
     <header>
@@ -21,6 +22,27 @@
             <li>Save</li>
           </ul>
         </nav>
+      </div>
+      <div class="table">
+        <table id="MainTable">
+          <thead>
+            <tr>
+              <th id="Step">Step</th>
+              <th id="StartTime">Start Time</th>
+              <th id="Period">Period</th>
+              <th id="Task">Task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tbodyStepCol" contenteditable="true">1</td>
+              <td class="tbodyCol" contenteditable="true"></td>
+              <td class="tbodyCol" contenteditable="true"></td>
+              <td class="tbodyCol" contenteditable="true"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button onclick="createRows()">Try it</button>
       </div>
     </header>
     <section id="tasks">
